@@ -15,7 +15,7 @@ def index():
         <h1>Introduzca una lista de números para obtener una nueva lista sin duplicados.</h1>
         <form method="post" action="/validar">
             <label for="texto">text:</label>
-            <input type="text" name="texto" id="texto">
+            <input type="text" name="texto" id="texto" required>
             <br>
             <p>Presione entrar para ordenar.</p>
             <input type="submit" value="Entrar">

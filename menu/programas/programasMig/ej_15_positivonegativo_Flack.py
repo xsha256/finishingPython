@@ -15,7 +15,7 @@ def index():
         <h1>Numero a comprobar</h1>
         <form method="post" action="/validar">
             <label for="numero">Número:</label>
-            <input type="number" step="any" name="numero" id="numero">
+            <input type="number" step="any" name="numero" id="numero" required>
             <br>
             <p>Presione entrar para validar.</p>
             <input type="submit" value="Entrar">

@@ -15,7 +15,7 @@ def index():
         <h1>Numeros para hacer la media separados por coma:</h1>
         <form method="post" action="/validar">
             <label for="texto">texto:</label>
-            <input type="text" name="texto" id="texto">
+            <input type="text" name="texto" id="texto" required>
             <br>
             <p>Presione entrar para validar.</p>
             <input type="submit" value="Entrar">
