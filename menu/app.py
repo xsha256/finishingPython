@@ -2,6 +2,7 @@
 from flask import Flask, request, render_template, redirect
 import os
 import random
+import platform
 from programas.programasMig.anagramas import anagramas
 from programas.programasMig.capicua import capicua
 from programas.programasMo.ej_4_AreaPeri_Flask import CalcularAreaPer
@@ -10,15 +11,17 @@ from programas.programasMo.ej_7_Par_Impar_Flask import parImpar
 
 app = Flask(__name__, static_folder='static')
 
-if sys.platform.startswith("linux"):
-    # linux
-    os.system('clear') 
-elif sys.platform == "darwin":
-    # MAX OS X
-    os.system('clear') 
-elif os.name == "nt":
-    #Windows, Cigwyin, etc. (32/64-bit)
-    os.system('cls') 
+if platform.system() == "Windows":
+    os.system("cls")
+    print("Estás en Windows")
+
+elif platform.system() == "Darwin" :
+    os.system("clear")
+    print("Estás en MacOS")
+
+elif platform.system() == "Linux" :
+    os.system("clear")
+    print("Estás en Linux")
 
 numero = 0
 intentos = 0
