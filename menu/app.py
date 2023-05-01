@@ -10,7 +10,15 @@ from programas.programasMo.ej_7_Par_Impar_Flask import parImpar
 
 app = Flask(__name__, static_folder='static')
 
-os.system('clear')
+if sys.platform.startswith("linux"):
+    # linux
+    os.system('clear') 
+elif sys.platform == "darwin":
+    # MAX OS X
+    os.system('clear') 
+elif os.name == "nt":
+    #Windows, Cigwyin, etc. (32/64-bit)
+    os.system('cls') 
 
 numero = 0
 intentos = 0
