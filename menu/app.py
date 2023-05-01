@@ -56,11 +56,10 @@ def validarJuego():
         <div class="center">
         <label for="numero">numero:</label><br>
         <input type="number" name="numero" id="numero" required>
-        </div>
         <p>Presione entrar para validar.</p>
         <input type="submit" value="Entrar">
-
         <input type="button" value="Menú" onclick="location.href='/'" />
+        </div>
         </form>
 
     </body>
@@ -80,9 +79,11 @@ def validarJuego():
             <h2>¡HAS ACERTADO!</h2>
             <p>El número era {nalea}</p>
             <p>Has necesitado {intentos} intentos para acertarlo.</p>
-            
+            <div class="center">
             <input type="button" value="Menú" onclick="location.href='/'" />
+        </div>
         </form>
+        </div>
         </body>
         </html>
             """
@@ -95,8 +96,9 @@ def anagrama():
 
 @app.route('/anagrama/validar', methods=['POST'])
 def validarAna():
-    textoPagWeb = request.form["texto"]
-    resultado = anagramas(textoPagWeb)
+    textoaPagWeb= request.form["textoa"]
+    textobPagWeb= request.form["textob"]
+    resultado=anagramas(textoaPagWeb, textobPagWeb)
     return render_template('anagrama2.html', resultado=resultado)
 
 

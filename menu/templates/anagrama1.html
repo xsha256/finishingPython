@@ -7,14 +7,18 @@
     <body>
         <div class="container">
             <form method="post" action="/anagrama/validar">
-        <h2>Introduzca dos frases separadas por un punto.</h2>
+        <h2>Introduzca dos frases para determinar si son anagramas.</h2>
             <div class="center">
-                <label for="texto">text:</label><br>
-                <input type="text" name="texto" id="texto">
+                <label for="textoa">Introduzca cadena de texto A:</label>
+              <input type="text" name="textoa" id="textoa" required>
+              <label for="textob">Introduzca cadena de texto B:</label>
+              <input type="text" name="textob" id="textob" required>
             </div>
             <p>Presione entrar para ordenar.</p>
+            <div class="center">
             <input type="submit" value="Entrar" />
             <input type="button" value="Menú" onclick="location.href='/'" />
+            </div>
           </form>
     </body>
     </html>
