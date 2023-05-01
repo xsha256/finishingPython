@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(69, 147, 78, 0.6); /* Fondo negro semi-transparente */
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    margin: auto;
+    padding: 20px;
+    width: 500;
+    font-size: 22px; /* Aumentar el tamaño de letra */
+    line-height: 2;
+  }
+  
+  h2, h1 {
+    text-align: center;
+  }
+  
+  input[type=text], input[type=password] {
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center; /* Nueva propiedad para centrar los inputs */
+  }
+  
+  button[type=submit] {
+    background-color: #2e9531;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #000000;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 600px) {
+    form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  
+label, p{
+   text-align: center;
+  }
+  .center {
+    text-align: center;
+  }
+  

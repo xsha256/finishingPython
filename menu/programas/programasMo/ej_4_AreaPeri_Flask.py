@@ -26,9 +26,9 @@ def index():
 
 @app.route('/verificar', methods=['POST'])
 def verificar():
-    salarioBase = request.form["radio"]
+    radio = request.form["radio"]
 
-    resultado = CalcularAreaPer(salarioBase)
+    resultado = CalcularAreaPer(radio)
     return f"""
    <!DOCTYPE html>
     <html>
@@ -58,9 +58,8 @@ def CalcularAreaPer(radio):
         perimetro = 2 * pi * int(radio)
 
         return f"""
-  El área es: {area:.2f} <br>
-  El perímetro es: {perimetro:.2f}
-        """
+  El área es: {area:.2f}.
+  El perímetro es: {perimetro:.2f}"""
 
     else:
         return ("Radio inválido")

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Juego Adivinación</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}"/>
+  </head>
+  <body>
+    <div class="container">
+        <form method="post" action="/juego/validar">
+          <h1>Juego de Adivinación</h1>
+          <p>¡Vamos a jugar a un juego!</p>
+          <p>Voy a pensar un número del 1 al 100.</p>
+          <p>¡A ver si eres capaz de adivinarlo!</p>
+          <p>Venga, ¿Cuál es mi número?</p>
+          <div class="center">
+            <label for="numero">Número:</label><br>
+            <input type="number" name="numero" id="numero" required />
+          </div>
+          <p>Presione entrar para validar.</p>
+          <input type="submit" value="Entrar" />
+          <input type="button" value="Menú" onclick="location.href='/'" />
+        </form>
+      </div>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 from flask import Flask,request
-from anagramas import anagramas
+from programas.programasMig.anagramas import anagramas
 
 app = Flask(__name__)
 

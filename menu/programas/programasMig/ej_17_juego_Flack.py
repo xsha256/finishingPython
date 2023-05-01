@@ -1,6 +1,7 @@
 from flask import Flask,request
 import random
 
+
 app = Flask(__name__)
 numero = 0
 intentos = 0
@@ -8,7 +9,7 @@ nalea = random.randint(1,100)
 @app.route("/")
 def index():
     return """
- <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <title>Juego Adivinación</title>
@@ -42,7 +43,7 @@ def validar():
         if nalea < numero:
             mayormenor = "Es más pequeño. prueba de nuevo."
         return f"""
- <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <title>Juego Adivinación</title>

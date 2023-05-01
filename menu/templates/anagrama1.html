@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Frases Anagrama</title>
+        <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}"/>
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="/anagrama/validar">
+        <h2>Introduzca dos frases separadas por un punto.</h2>
+            <div class="center">
+                <label for="texto">text:</label><br>
+                <input type="text" name="texto" id="texto">
+            </div>
+            <p>Presione entrar para ordenar.</p>
+            <input type="submit" value="Entrar" />
+            <input type="button" value="Menú" onclick="location.href='/'" />
+          </form>
+    </body>
+    </html>

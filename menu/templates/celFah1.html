@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cel</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="/celFah/validar">
+        <h2>Convertir de Celius a Fahrenheit</h2>
+        <div class="center">
+          <label for="number">Introduce un grado Celsius:</label><br>
+          <input type="number" name="grado" id="grado" />
+        </div>
+        <input type="submit" value"Submit">
+        <input type="button" value="Menú" onclick="location.href='/'" />
+      </form>
+    </div>
+  </body>
+</html>

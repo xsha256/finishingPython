@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Determinar número primo</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/capicua/validar">
+    <h2>Número capicúa o no</h2>
+    <div class="center">
+        <label for="numero">Número:</label><br>
+        <input type="number" name="numero" id="numero">
+    </div>
+            <p>Presione entrar para validar.</p>
+        <input type="submit" value="Entrar">
+        <input type="button" value="Menú" onclick="location.href='/'" />
+    </form>
+  </div>
+
+</body>
+</html>

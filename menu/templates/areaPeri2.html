@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/juego/validar">
+    <h2>El area y el perimetro? </h2>
+    <p>{{resultado}}</p><br>
+
+    <input type="button" value="Menú" onclick="location.href='/'" />
+</form>
+</div>
+
+</body>
+</html>

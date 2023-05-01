@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Número Par o Impar</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/parImpar/validar">
+    <h2>Número par o impar</h2>
+    <div class="center">
+        <label for="number">Intoduce un número:</label><br>
+        <input type="number" name="num" id="num">
+        </div>
+    <input type="submit" value"Submit">
+    <input type="button" value="Menú" onclick="location.href='/'" />
+</form>
+</div>
+</body>
+</html>
