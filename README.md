@@ -38,70 +38,32 @@ Ejercicios de carácter puramente educativo.
 
 ## Los programas presentes en este repositorio fueron creados para resolver los siguientes problemas:
 
-## Ejercicios sobre JSON
+### Ejercicios de Base de Datos:
 
-Dados los siguientes JSON, deberá crear un programa en python, que pida la información por teclado, conforme un objeto Python y al final convierta el objeto conformado al JSON correspondiente:
+Elegir uno de los ejercicios de ficheros y utilizar en cambio de ficheros la BBDD (Se puede elegir entre MongoDB o SQL Server).
 
-### Programa 1: Información sobre un usuario:
+#### 1 - Lista de hombres y mujeres
+####  2 - Lista de personas para por edades.
+####  3 - Lista de Personas
+####  4 - Temperatura mensual de 20 ciudades
 
-El JSON generado deberá ser.
 
-```
-{"nombre": "Juan", "edad": 30, "email": "juan@acme.com", "trabajo": {"empresa": "Acme Corp", "puesto": "Ingeniero de software"}}
-```
+### Condiciones:
 
-### Programa 2: Transacción financiera:
+Deberá completar su programa en Python para que cumpla con las siguientes condiciones:
 
-El JSON generado deberá ser.
+- Mostrar una opción para generar los datos de forma aleatoria y almacenarlo en la BBDD.
+- Mostrar una opción para recuperar los datos de la BBDD (si existe) o generarlos de nuevo y almacenarlos en la BBDD.
+- Realice la opción para que el resultado de las opciones estadísticas se puedan guardar en la BBDD.
 
-```
-{"id": 123456789, "fechayhora": "2023-04-18T12:30:00Z", "monto": 500.25, "tipo": "compra", "producto": {"nombre": "Smartphone", "precio": 450.00, "descripcion": "Un teléfono inteligente de última generación"}}
-```
+### Ejercicios con Flask:
 
-### Programa 3: Información medica de paciente:
+1) Mostrar una página que ponga 6 opciones: (1)
 
-El JSON generado deberá ser:
+​		Elegir para las 6 opciones 6 de los 20 ejercicios (DNI, Salario, Par o Impar, Celsius, etc)
 
-```
-{"nombre": "Pedro", "apellido": "Pérez", "edad": 45, "peso": 80.5, "altura": 1.75, "historial_medico": {"alergias": ["penicilina", "mariscos"], "problemas_cardiacos": false, "medicamentos": [{"nombre": "Ibuprofeno", "dosis": "200mg"}, {"nombre": "Paracetamol", "dosis": "500mg"}]}, "ultima_revision": "2022-10-01", "proximo_turno": "2023-05-15"}
-```
+2) Cuando se pase a la página de la opción, se verá su funcionalidad
 
-**NOTA: **Para comprobar los programas anteriores, cree un programa en python, que pida un JSON como texto y lo convierta en un objeto Python y lo muestre por pantalla.
-
-## Ejercicios básicos de clases
-
-### Programa 1:
-
-Crear una clase `Lapiz` que tenga los atributos `color` (cadena de caracteres) y `grosor` (entero). El constructor debe inicializar ambos atributos con valores por defecto. Agregar un método `escribir` que imprima por pantalla la frase "Escribiendo con un lapiz de [color] y grosor [grosor]". Crear un objeto de la clase `Lapiz` e invocar el método `escribir`.
-
-### Programa 2:
-
-Crear una clase `Flor` que tenga los atributos `nombre` (cadena de caracteres) y `color` (cadena de caracteres). El constructor debe recibir ambos atributos como argumentos e inicializarlos. Agregar un método `mostrar_informacion` que imprima por pantalla el nombre y color de la flor. Crear dos objetos de la clase `Flor` e invocar el método `mostrar_informacion` para ambos.
-
-### Programa 3:
-
-Dada la siguiente lista de productos.
-
-```
-productos_lista = [
-    {"nombre": "Leche", "precio": 2.50, "stock": 10},
-    {"nombre": "Huevos", "precio": 1.50, "stock": 20},
-    {"nombre": "Pan", "precio": 1.00, "stock": 15}
-]
-```
-
-Crear un clase que represente los elementos de la lista, con la clase crear objetos que rellenen una lista de productos.
-
-### Programa 4:
-
-Dada la siguiente lista de alumnos.
-
-```
-alumnos_lista = [
-    {"nombre": "Juan", "apellido": "Pérez", "edad": 20, "notas": [7, 8, 9]},
-    {"nombre": "María", "apellido": "González", "edad": 22, "notas": [6, 9, 10]},
-    {"nombre": "Pedro", "apellido": "García", "edad": 21, "notas": [5, 7, 8]} ]
-```
-
-Crear un clase que represente los elementos de la lista, con la clase crear objetos que rellenen una lista de alumnos.
-La clase deberá tener un método que incorpore el promedio de las notas del alumno.
+   1) Total de paginas HTML dinámicas: 12
+      1) Pagina de solicitud de datos
+      2) Pagina de resultados
