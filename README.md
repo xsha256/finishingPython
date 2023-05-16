@@ -4,7 +4,7 @@
 
 - Clonar el repositorio:
 
-  - `git clone https://github.com/JonPiniesEcheguren/MiddlePython.git`
+  - `git clone https://github.com/xsha256/finishingPython`
 
 - Crear y activar el entorno virtual:
 
